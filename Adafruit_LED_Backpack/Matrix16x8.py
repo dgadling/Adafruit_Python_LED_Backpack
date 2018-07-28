@@ -51,8 +51,8 @@ class Matrix16x8(HT16K33.HT16K33):
         # Convert image to 1 bit color and grab all the pixels.
         pix = image.convert('1').load()
         # Loop through each pixel and write the display buffer pixel.
-        for x in xrange(8):
-            for y in xrange(16):
+        for x in range(8):
+            for y in range(16):
                 color = pix[(y, 7-x)]
                 # Handle the color of the pixel, off or on.
                 if color == 0:
